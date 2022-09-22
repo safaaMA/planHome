@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    background: #282828;
+    border-radius: 10px;
+}
+div.main {
+    display: flex;
+    flex-direction: column;
+}
+.nav {
+    width: 77%;
+    margin: 10px auto;
+    border-radius: 12px;
+    display: flex;
+    background: white;
+}
+.nav::after {
+    content: "";
+    width: 44%;
+    position: absolute;
+    background-color: #d6e3eb59;
+    height: 293px;
+    left: 85px;
+    top: 258px;
+    border-radius: 49% 105%;
+} 
+ul.max-ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+li.max-li {
+    display: block;
+    margin: 10px;
+}
+li.max-li a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Almarai';
+} 
+
+
+.titleImg {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px auto;
+    animation: showslo ease-in-out 1s;
+}
+.titleARate {
+    width: 67%;
+}
+.title {
+    margin: 85px 0px 70px 0px;
+    width: 100%;
+}
+.title h1 {
+    font-family: 'Almarai', sans-serif;
+    margin: 0px 0px 0px 173px;
+    width: 50%;
+    color: #ffffffb8;
+}
+.title h5 {
+    font-family: 'Almarai', sans-serif;
+    margin: 0px 0px 0px 225px;
+    width: 31%;
+    color: #ffffffb8;
+}
+.title p {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    width: 71%;
+    font-size: 13px;
+    margin: 0px 0px 9px 78px;
+    color: #ffffffb8;
+}
+.Rate {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: row-reverse;
+    color: #c2c2c2;
+    border-radius: 15px;
+    margin: 0px 10px;
+}
+@keyframes showslo {
+    0%{opacity: 0.0;}
+    100%{opacity: 1;}
+}
+.R0 h1 {
+    font-size: 30px;
+    font-family: 'Noto Kufi Arabic';
+}
+.R0 h4 {
+    font-size: 15px;
+    font-family: 'Noto Kufi Arabic';
+}
+.mainImg {
+    width: 100%;
+    text-align: center;
+}
+.mainImg img {
+    width: 82%;
+    margin-top: 56px;
+    cursor: grab;
+    position: relative;
+    bottom: 0px;
+}
+
+.btn-main {
+    width: 25%;
+    margin: 13px 0px 0px 249px;
+}
+
+.btn-main a {
+    text-decoration: none;
+    background: #2F4858;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Almarai';
+    font-size: 12px;
+}
+.fas, .fa-solid {
+    font-weight: 900;
+    font-size: 19px;
+    margin: 0px 2px;
+}
+
+.iconN {
+    text-align: center;
+    margin: 33px 0px;
+}
+.iconN a {
+    color: #fff;
+}
+.txtMneu {
+    display: none;
+}
+.listMneuPH {
+    display: none;
+}
+@media (max-width: 767px){
+    .nav {
+        display: none;
+    }
+    .titleImg {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .titleARate {
+        width: 100%;
+    }
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+    .title h1 {
+        margin: 0px 0px 0px 0px; 
+        width: 100%;
+        font-size: 42px;
+    }
+    .title h5 {
+        margin: 0px 0px 0px 0px; 
+        width: 100%;
+    }
+    .title p {
+        margin: 0px 0px 0px 0px; 
+        width: 100%;
+    }
+    .btn-main {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+    .Rate {
+        width: 100%;
+        margin: 0px 0px;
+    }
+    .R0 {
+        margin: 0px 0px;
+    }
+    .txtMneu {
+        display: flex;
+        justify-content: space-between;
+        z-index: 12;
+    }
+    .fa-bars-staggered ,.fa-right-to-bracket {
+        font-weight: 900;
+        font-size: 20px;
+        margin: 17px;
+    }
+    .listMneuPH {
+        display: none;
+        position: absolute;
+        background: #ffffff;
+        width: 90%;
+        text-align: center;
+        z-index: 11;
+        height: 100vh;
+        color: #282828;
+        font-family: 'Almarai';
+        font-size: 21px;
+        transition: 0.8s;
+    }
+
+    .opeNnav {
+         display: inherit;
+         animation: show  .5s  ease-in-out;
+    }
+    @keyframes show {
+        0%{opacity: 0.7;}
+        50%{opacity: 0.8;}
+        75%{opacity: 0.9;}
+        100%{opacity: 1;}
+    }
+    ul {
+        margin: 0px 0px 0px 0px;
+    }
+    li {
+        margin: 85px 0px;
+        display: block;
+    }
+    i.fa-solid.showd.fa-bars-staggered {
+        display: inline;
+        color: #fff;
+    }
+    i.fa-solid.showd.fa-bars-staggered.hidMneu  {
+        display: none;
+    }
+    i.fa-solid.fa-xmark.fa-bars-staggered.done {
+        display: none;
+    }
+    i.fa-solid.fa-xmark.fa-bars-staggered.showClose{
+        display: inline;
+    }
+    .fas, .fa-solid {
+        font-weight: 900;
+        color: #fff;
+    }
+}
+/* ------------------------------------------------------- */
+.reveal{
+    position: relative;
+    transform: translateY(144px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{ 
+      transform: translateY(0);
+    opacity: 1;
+} 
+/* ---------------------------------------------------- */
+
+
+/* section WHYWE */
+
+
+section.whyWE {
+    width: 90%;
+    margin: 100px auto;
+    border-radius: 20px;
+}
+.containerWHY {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.titleWHE {
+    margin-bottom: 60px;
+}
+.titleWHE h1 {
+    text-align: center;
+    font-family: 'Noto Kufi Arabic';
+    color: #c2c2c2;
+}
+.IconCart {
+    height: 100px;
+    width: 100%;
+}
+.IconCart img {
+    width: 33%;
+}
+.TitleCart h1 {
+    font-family: 'Almarai';
+}
+.TitleCart p {
+    font-family: 'Noto Kufi Arabic';
+    font-size: 12px;
+    color: black;
+}
+.TitleCart {
+    height: 139px;
+}
+.cart1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    background: #ffffffe8;
+    margin: 0px 13px;
+    border-radius: 10px;
+    height: 268px;
+    flex-wrap: wrap;
+    box-shadow: 1px 0px 5px 0px #000000;
+}
+@media (max-width: 767px){
+    .containerWHY {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cart1 {
+
+        width: 68%;
+        margin: 16px 13px;
+        height: 325px;
+    }
+
+    .IconCart {
+        height: 100px;
+        width: 75%;
+    }
+
+}
+/* ___________ */
+video {
+    width: 100%;
+}
+.videoD {
+    width: 60%;
+}
+section.vdo {
+    display: flex;
+    background: #fff;
+}
+.text-ved {
+    width: 40%;
+}
+.text-ved h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Almarai';
+    margin: 47px 0px;
+}
+.text-ved p {
+    font-family: 'Almarai';
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+@media (max-width: 767px){
+    
+    section.vdo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .videoD {
+        width: 101%;
+    }
+    .text-ved {
+        width: 81%;
+    }
+    .text-ved {
+       width: 101%;
+       background: white;
+    }
+}   
+/* ---------------- contact---------------- */
+section.Work {
+    margin-bottom: 105px;
+}
+.carW {
+    width: 176px;
+    border-radius: 10px;
+    text-align: center;
+    background: #ececec;
+    display: flex;
+    margin: 0px 40px 0px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerCard {
+    display: flex;
+    width: 95%;
+    margin: 25px auto;
+    align-items: flex-end;
+}
+.imgC {
+    width: 100%;
+    margin-bottom: 16px;
+    height: 133px;
+}
+.imgC img {
+    width: 100%;
+}
+.textW {
+    width: 90%;
+    margin: 0 auto;
+}
+.textW h3{
+    font-family: 'Almarai';
+    margin: 20px 0px;
+}
+.textW p {
+    color: #000000a3;
+    font-family: 'Almarai';
+    font-size: 12px;
+}
+.btnC {
+    margin: 10px 0px;
+    border: none;
+    background: #282828;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-family: 'Almarai';
+    border-radius: 10px;
+}
+.seeall {
+    width: 85%;
+    margin: 0 auto;
+    color: #c2c2c2;
+    font-family: 'Almarai';
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.seeall h1{
+   margin:0px 0px 0px 5px;
+   }
+.seeall:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.p-cart {
+    height: 49px;
+}
+
+@media (max-width: 767px){
+    .containerCard {
+        flex-direction: column;
+        align-items: center;
+    }
+    .carW {
+        margin: 43px 0px 0px 0px;
+    }
+}
+/* ----------------- Contact sec----------- */
+.conatainerCONT {
+    width: 70%;
+    background: #ececec;
+    margin: 0 auto;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+}
+section.Contact {
+    margin: 0px 0px 115px 0px;
+}
+.textCON {
+    text-align: center;
+    font-family: 'Noto Kufi Arabic';
+    color: #282828;
+    padding: 25px 0px 25px 0px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="text"] {
+    width: 114%;
+    margin: 10px 0px;
+    height: 43px;
+    text-align: center;
+    font-family: 'Noto Kufi Arabic';
+    border: none;
+    background: #282828;
+    border-radius: 10px;
+    color: #fff;
+}
+.sendINP {
+    display: flex;
+    align-items: center;
+}
+i.fa-solid.fa-comments {
+    color: #fff;
+}
+input[type="submit"] {
+    width: 45%;
+    height: 40px;
+    background: #3046e7;
+    border: none;
+    border-radius: 11px;
+    margin-left: 9px;
+    color: #fff;
+    font-family: 'Noto Kufi Arabic';
+}
+.divform {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px){
+    .conatainerCONT {
+        width: 90%;
+    }
+}
+/* ----------foooter------------- */
+
+section.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: 1px solid #c2c2c2;
+}
+.location {
+    margin: 25px 0px 62px 0px;
+    width: 35%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Noto Kufi Arabic';
+}
+.a-loc {
+    margin-top: 30px;
+}
+.a-loc a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 3px 85px;
+    border: 1px solid #fff;
+    font-weight: 900;
+}
+.footer2 {
+    width: 65%;
+}
+
+ul.navdonUL {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+li.li-NavDon {
+    display: block;
+    color: #fff;
+    margin: 38px 10px;
+    font-family: 'Noto Kufi Arabic';
+    cursor: pointer;
+}
+.Social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.Social01 {
+    margin: 0px 8px;
+}
+.cooce {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.cooce a {
+    color: #fff;
+    margin: 0px 7px;
+    font-family: 'Noto Kufi Arabic';
+    font-size: 11px;
+    text-decoration: none;
+}
+.me {
+    text-align: center;
+    font-size: 6px;
+}
+
+@media (max-width: 767px){
+    section.footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .location {
+        width: 100%;
+    }
+    ul.navdonUL {
+        justify-content: center;
+        flex-direction: column;
+    }
+    li.li-NavDon {
+        margin: 7px 10px;
+    }
+    .Social {
+        margin: 12px 0px;
+    } 
+    .footer2 {
+        width: 100%;
+        text-align: center;
+    }
+}
